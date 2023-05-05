@@ -40,8 +40,8 @@
     </tr>
     <tr>
         <td>
-            <input type='submit' value="Update">
-            <a href="{{URL::route('student.index')}}">Back</a>
+            <input type='submit' value="Update"><br/>
+            <a href="{{URL::route('student.index')}}">Back</a> |  <a href="{{URL::route('home')}}">Home</a>
         </td>
     </tr>
     </table>
