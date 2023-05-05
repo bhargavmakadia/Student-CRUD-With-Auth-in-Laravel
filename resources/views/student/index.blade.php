@@ -46,12 +46,12 @@
             </form>
         </td>
         <td>
-            <form action="{{route('student.destroy',$sdata->id)}}" method="post">
+            <form action="{{route('student.destroy',$sdata->id)}}"  onclick="return confirm('Are you sure you want to delete?')" method="post">
                 @csrf
                 @method('DELETE')
-                <button type="submit" class='button' onclick="return confirm('Are you sure you want to delete?');">Delete</button>
+                <button type="submit" class='button'>Delete</button>
             </form>
         </td>
     </tr>
-    @endforeach
+    @endforeach 
 </table>
