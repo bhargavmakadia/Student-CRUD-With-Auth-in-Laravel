@@ -16,10 +16,15 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
+<style>
+  div1 {
+  background-color:  #ffb3b3;
+}  
+    </style>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+            <div1 class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('Student', 'Student') }}
                 </a>
@@ -69,7 +74,7 @@
                         @endguest
                     </ul>
                 </div>
-            </div>
+            </div1>
         </nav>
 
         <main class="py-4">
